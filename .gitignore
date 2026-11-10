@@ -1,0 +1,48 @@
+# ===== Environnements Python / uv =====
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.python-version.local
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+.jupyter/
+*.nbconvert.ipynb
+
+# ===== Donnees =====
+# data/raw/ est versionne (jeu source public, ~1.2 Mo) pour garantir la reproductibilite.
+# Les donnees derivees sont regenerables par les notebooks : on ne les versionne pas.
+data/interim/
+data/processed/
+data/external/
+*.parquet
+
+# Fichiers temporaires Excel / Office
+~$*
+*.tmp
+
+# ===== Artefacts de modelisation =====
+*.pkl
+*.joblib
+mlruns/
+
+# ===== Caches outils =====
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.ipython/
+
+# ===== OS / IDE =====
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# ===== Quarantaine =====
+# Fichiers ecartes lors de la restructuration (cours, notebooks de travail,
+# ancienne archive de soumission). A supprimer apres verification.
+_archive/

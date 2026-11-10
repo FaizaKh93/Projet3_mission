@@ -1,0 +1,26 @@
+[project]
+name = "projet3-consommation-batiments"
+version = "1.0.0"
+description = "Prediction de la consommation energetique et des emissions de CO2 des batiments non residentiels de Seattle (donnees 2016)"
+readme = "README.md"
+requires-python = ">=3.14"
+
+dependencies = [
+    "matplotlib>=3.10.8",
+    "numpy>=2.3.5",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.16.0",
+    "seaborn>=0.13.2",
+    "xgboost>=3.2.0",
+]
+
+# Outillage notebook : installe par defaut avec `uv sync`
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+    "jupyterlab>=4.5.1",
+]
+
+[tool.uv]
+package = false
